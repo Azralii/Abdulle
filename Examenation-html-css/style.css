@@ -1,38 +1,67 @@
+/* Använd Bellefair som kroppstext */
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Bellefair', serif; 
     background-color: #b2b6b9;
-    color:#0056b3;
+    color: #0056b3;
     margin: 0;
     padding: 0;
 }
+
+/* Definiera typsnittet för Love Light */
+@font-face {
+    font-family: 'Love Light';
+    src: url('fonts/Love_Light/LoveLight-Regular.ttf') format('truetype');
+    font-weight: normal; 
+    font-style: normal; 
+}
+
+/* Definiera typsnittet för Bellefair */
+@font-face {
+    font-family: 'Bellefair';
+    src: url('fonts/Bellefair/Bellefair-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Rubriker använder Roboto */
+h1, h2, h3 {
+    font-family: 'Roboto', sans-serif;
+    color: #0056b3;
+}
+
+/* Betoningselement använder Love Light */
+em, strong {
+    font-family: 'Love Light', cursive; 
+    font-style: italic; 
+}
+
+
 h1 {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     font-weight: 500;
     text-align: center;
-    color: #0056b3;
     margin-bottom: 30px;
 }
+
 h2 {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     font-weight: 500;
     text-align: center;
-    color: #0056b3;  
-
 }
 
 h3 {
     font-size: 1.2rem;
-    color: #0056b3;
     margin-bottom: 15px;
 }
 
-/* Paragrafstilar */
+/* Standard paragrafstilar använder Roboto */
 p {
     font-size: 1.2rem;
     line-height: 1.6;
     color: #555;
     margin-bottom: 20px;
 }
+
 
 /* Navigationsmeny */
 .navbar {
@@ -41,7 +70,7 @@ p {
 
 .navbar-brand, .nav-link {
     color: #0056b3;
-    font-size: 1.3rem;
+    font-size: 1.6rem;
     margin-right: 10px;
 }
 
@@ -56,14 +85,14 @@ p {
 
 /* Huvudinnehåll */
 .container {
-    background-color: rgb(244, 235, 235);
+    background-color: rgb(235, 242, 244);
     padding: 30px;
     box-shadow: 0 0 15px rgba(96, 10, 226, 0.1);
     margin-top: 20px;
     border-radius: 20px;
 }
 
-/* Kontaktformulär */
+/* Kontaktformulär klart */
 form {
     max-width: 600px;
     margin: 0 auto;
@@ -150,8 +179,8 @@ footer {
 }
 .socialIcons {
     display: flex;
-    justify-content: center; /* Centrera ikonerna horisontellt */
-    align-items: center; /* Centrera ikonerna vertikalt (om det behövs) */
+    justify-content: center; 
+    align-items: center; 
     padding: 20px;
 }
 
@@ -162,7 +191,7 @@ footer {
     margin: 10px;
     border-radius: 50%;
     display: grid;
-    place-items: center; /* Centrera ikonerna */
+    place-items: center; 
 }
 
 .socialIcons a i {
